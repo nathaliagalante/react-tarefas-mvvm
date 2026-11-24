@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { criarTarefa, alternarConclusao as alternarConclusaoNoModel } from './Model';
 
-export default function ViewModel() {
+export default function useViewModel() {
     const [tarefas, setTarefas] = useState([]);
     const [texto, setTexto] = useState("");
     const [filtro, setFiltro] = useState("todas");
